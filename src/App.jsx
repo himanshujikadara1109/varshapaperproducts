@@ -54,8 +54,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               ${isScrolled ? 'shadow-green-500/20 border-emerald-500/30' : 'shadow-green-500/40 border-emerald-500/50 group-hover:scale-105'}`}>
               <img src="/logo.jpeg" alt="Varsha Paper Products" className="w-full h-full object-contain" />
             </div>
-            <span className={`font-black tracking-tighter transition-all duration-300 ${isScrolled ? 'text-lg md:text-xl' : 'text-xl md:text-2xl'} ${darkMode ? 'text-white' : 'text-zinc-900'}`}>
-              Varsha <span className="text-emerald-500 hidden sm:inline">Paper Products</span>
+            <span className={`font-black tracking-tighter transition-all duration-300 ${isScrolled ? 'text-sm sm:text-lg md:text-xl' : 'text-base sm:text-xl md:text-2xl'} ${darkMode ? 'text-white' : 'text-zinc-900'}`}>
+              Varsha <span className="text-emerald-500">Paper Products</span>
             </span>
           </motion.a>
 
@@ -607,18 +607,19 @@ const Contact = ({ darkMode }) => {
               </div>
 
               <div className="space-y-8">
-                <div className="flex gap-6 items-center">
-                  <div className="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/10"><Phone className="w-6 h-6" /></div>
-                  <div>
-                    <p className="text-xs uppercase font-black tracking-widest opacity-60">Call Us</p>
-                    <p className="text-xl font-bold">+91 63534 69211</p>
+                <div className="flex gap-4 sm:gap-6 items-center overflow-hidden">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 shrink-0 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/10"><Phone className="w-5 h-5 sm:w-6 sm:h-6" /></div>
+                  <div className="min-w-0">
+                    <p className="text-[10px] sm:text-xs uppercase font-black tracking-widest opacity-60">Call Us</p>
+                    <p className="text-base sm:text-xl font-bold truncate">+91 63534 69211</p>
                   </div>
                 </div>
-                <div className="flex gap-6 items-center">
-                  <div className="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/10"><Globe className="w-6 h-6" /></div>
-                  <div>
-                    <p className="text-xs uppercase font-black tracking-widest opacity-60">Email Us</p>
-                    <p className="text-xl font-bold">varshapapers2020@gmail.com</p>
+                <div className="flex gap-4 sm:gap-6 items-center overflow-hidden">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 shrink-0 rounded-2xl bg-white/10 backdrop-blur-md flex items-c
+                  enter justify-center border border-white/10"><Globe className="w-5 h-5 sm:w-6 sm:h-6" /></div>
+                  <div className="min-w-0">
+                    <p className="text-[10px] sm:text-xs uppercase font-black tracking-widest opacity-60">Email Us</p>
+                    <p className="text-base sm:text-xl font-bold truncate">varshapapers2020@gmail.com</p>
                   </div>
                 </div>
               </div>
