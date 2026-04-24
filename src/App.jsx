@@ -472,10 +472,10 @@ const Products = ({ darkMode }) => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex flex-col md:flex-row justify-between items-end gap-10">
           <SectionHeading subtitle="Product Lab" title="Industrial Paper Selection" darkMode={darkMode} />
-          <button className={`mb-20 px-8 py-4 rounded-2xl font-black text-sm border-2 transition-all ${darkMode ? 'border-zinc-800 text-white hover:bg-zinc-800' : 'border-zinc-200 text-zinc-900 hover:bg-zinc-50'
+          {/* <button className={`mb-20 px-8 py-4 rounded-2xl font-black text-sm border-2 transition-all ${darkMode ? 'border-zinc-800 text-white hover:bg-zinc-800' : 'border-zinc-200 text-zinc-900 hover:bg-zinc-50'
             }`}>
             DOWNLOAD TECHNICAL TDS
-          </button>
+          </button> */}
         </div>
 
         <div className="flex overflow-x-auto gap-8 pb-12 pt-4 snap-x snap-mandatory hide-scrollbar">
