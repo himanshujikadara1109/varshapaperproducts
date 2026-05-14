@@ -35,6 +35,41 @@ const Hero = ({ darkMode }) => {
 
       {/* Main Centered Content */}
       <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col items-center justify-center text-center mt-10">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="relative mb-8"
+        >
+          {/* Pulsing Background Glow */}
+          <motion.div
+            animate={{ 
+              scale: [1, 1.1, 1],
+              opacity: [0.3, 0.6, 0.3] 
+            }}
+            transition={{ 
+              duration: 4, 
+              repeat: Infinity, 
+              ease: "easeInOut" 
+            }}
+            className="absolute inset-0 bg-emerald-500/20 blur-xl rounded-full"
+          />
+          
+          {/* Badge Container */}
+          <div className={`relative px-8 py-2.5 rounded-full border border-emerald-500/30 backdrop-blur-md overflow-hidden group ${darkMode ? 'bg-emerald-500/5' : 'bg-white/50'}`}>
+            {/* Animated Shine Effect */}
+            <motion.div
+              animate={{ x: ['-100%', '200%'] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "linear", repeatDelay: 2 }}
+              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-12"
+            />
+            
+            <span className="relative z-10 text-emerald-500 font-black uppercase tracking-[0.4em] text-[10px] md:text-xs">
+              Bulk Paper Solutions
+            </span>
+          </div>
+        </motion.div>
+
         <motion.h1
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}

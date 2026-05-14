@@ -35,10 +35,10 @@ const Footer = ({ darkMode }) => (
       {/* Middle side: Links */}
       <div className="space-y-4 pt-2 md:pt-4">
         <ul className={`space-y-4 font-bold text-sm ${darkMode ? 'text-zinc-400' : 'text-zinc-600'}`}>
-          <li><a href="#about" className="hover:text-emerald-500 transition-colors">About Us</a></li>
-          <li><a href="#products" className="hover:text-emerald-500 transition-colors">Product</a></li>
-          <li><a href="#contact" className="hover:text-emerald-500 transition-colors">Contact Us</a></li>
-          <li><a href="#home" className="hover:text-emerald-500 transition-colors">Home</a></li>
+          <li><a href="#about" onClick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }); }} className="hover:text-emerald-500 transition-colors">About Us</a></li>
+          <li><a href="#products" onClick={(e) => { e.preventDefault(); document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' }); }} className="hover:text-emerald-500 transition-colors">Product</a></li>
+          <li><a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }} className="hover:text-emerald-500 transition-colors">Contact Us</a></li>
+          <li><a href="#home" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="hover:text-emerald-500 transition-colors">Home</a></li>
         </ul>
       </div>
 
@@ -48,7 +48,7 @@ const Footer = ({ darkMode }) => (
         <div className={`text-sm font-bold leading-relaxed ${darkMode ? 'text-zinc-400' : 'text-zinc-600'}`}>
           <div className="flex gap-3 items-start">
             <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2 flex-shrink-0 shadow-[0_0_8px_rgba(52,211,153,0.8)]"></div>
-            <p>Ploat no 231, The people co-op. bank gali, Near sub jail, Ring road, Khatodara, Udhnaa, Surat</p>
+            <p>Plot no 231, The People co-op bank gali, Near sub-jail, Ring Road, Khatodara, Udhana, Surat</p>
           </div>
         </div>
       </div>

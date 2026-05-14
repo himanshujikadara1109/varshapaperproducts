@@ -29,7 +29,7 @@ export default function App() {
         <About darkMode={darkMode} />
 
         {/* Animated Banner with Paper Stats */}
-        <div className={`py-12 overflow-hidden border-y whi3tespace-nowrap transition-colors duration-700 ${darkMode ? 'bg-zinc-900/50 border-white/5' : 'bg-white border-black/5 shadow-sm'
+        <div className={`py-12 overflow-hidden border-y whitespace-nowrap transition-colors duration-700 ${darkMode ? 'bg-zinc-900/50 border-white/5' : 'bg-white border-black/5 shadow-sm'
           }`}>
           <motion.div
             animate={{ x: [0, -1200] }}
